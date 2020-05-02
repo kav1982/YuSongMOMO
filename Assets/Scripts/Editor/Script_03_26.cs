@@ -11,7 +11,8 @@ public class Script_03_26 : ObjectPreview
 
     public override void OnPreviewGUI(Rect r, GUIStyle background)
     {
-        GUI.DrawTexture(r, AssetDatabase.LoadAssetAtPath<Texture>("Assets/unity.png"));
+        //如何转换为系统图标？？？
+        GUI.DrawTexture(r, EditorGUIUtility.IconContent("SceneAsset Icon").image);
         GUILayout.Label("Hello World!!!");
     }
 }

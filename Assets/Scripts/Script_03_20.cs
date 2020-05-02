@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Script_03_20 
 {
-    [MenuItem("Root/Test0", false,1)]
+    [MenuItem("Root/Test1", false,1)]
     static void Test1()
     {
 

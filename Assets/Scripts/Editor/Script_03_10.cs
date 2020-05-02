@@ -15,8 +15,11 @@ public class Script_03_10 : Editor
     {
         if (GUILayout.Button("拓展按钮"))
         {
-            m_Editor.OnInspectorGUI();
+            //m_Editor.OnInspectorGUI();
+            //Debug.Log("112233");
             //base.OnInspectorGUI();
         }
+        m_Editor.OnInspectorGUI();
+        //base.OnInspectorGUI();
     }
 }

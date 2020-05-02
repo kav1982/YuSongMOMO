@@ -5,19 +5,19 @@ using UnityEditor;
 
 public class Script_03_23 : MonoBehaviour
 {
-    public Vector3 scrollPos;
-    public int myId;
-    public string myName;
-    public GameObject prefab;
-    public MyEnum myEnum = MyEnum.One;
-    public bool toogle1;
-    public bool toogle2;
+	public Vector3 scrollPos;
+	public int myId;
+	public string myName;
+	public GameObject prefab;
+	public MyEnum myEnum = MyEnum.One;
+	public bool toogle1;
+	public bool toogle2;
 
-    public enum MyEnum
-    {
-    	One=1,
-    	Two,
-    }
+	public enum MyEnum
+	{
+		One = 1,
+		Two,
+	}
 }
 
 #if UNITY_EDITOR
@@ -30,7 +30,7 @@ public class ScriptEditor_03_23 : Editor
 	{
 		Script_03_23 script = target as Script_03_23;
 
-		script.scrollPos = 
+		script.scrollPos =
 			EditorGUILayout.BeginScrollView(script.scrollPos, false, true);
 
 

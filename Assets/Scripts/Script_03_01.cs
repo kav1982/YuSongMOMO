@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Script_03_01
 {
+    //false，判断是否打印错误信息
+    //数字1，2 表示面板中的顺序
     [MenuItem("Assets/My Tools/Tools 1", false, 2)]
     static void MyTools1()
     {

@@ -9,10 +9,12 @@ public class Script_03_08
     {
         if(Selection.activeTransform)
         {
-            if(Selection.activeTransform.GetComponentInParent<Canvas>())
+            //Canvas UI的画布
+            if (Selection.activeTransform.GetComponentInParent<Canvas>())
             {
                 Image image = new GameObject("image").AddComponent<Image>();
                 image.raycastTarget = false;
+                //raycastTarget 游戏运行时不要向点击的目标发射射线
                 image.transform.SetParent(Selection.activeTransform, false);
             }
         }
