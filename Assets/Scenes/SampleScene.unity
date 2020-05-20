@@ -640,6 +640,7 @@ GameObject:
   - component: {fileID: 1005495649}
   - component: {fileID: 1005495648}
   - component: {fileID: 1005495647}
+  - component: {fileID: 1005495652}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -736,6 +737,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1005495652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005495646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13ea30db64387748a234ad64fb85e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 1247024919}
+  - {fileID: 1276366476}
 --- !u!1 &1093072101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,6 +1287,7 @@ GameObject:
   - component: {fileID: 1680253074}
   - component: {fileID: 1680253073}
   - component: {fileID: 1680253077}
+  - component: {fileID: 1680253078}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1365,6 +1382,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contextName: ' hellow world!!'
+--- !u!114 &1680253078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680253072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826430dad40e35848a16c824eda8db86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 6666666
+  targets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1681480794
 GameObject:
   m_ObjectHideFlags: 0
