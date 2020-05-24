@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-public class Script_04_11 : MonoBehaviour, IserializationCallbackReceiver
+public class Script_04_11 : MonoBehaviour, ISerializationCallbackReceiver
 {
     [SerializeField]
     private List<Sprite> m_Values = new List<Sprite>();
@@ -14,9 +14,9 @@ public class Script_04_11 : MonoBehaviour, IserializationCallbackReceiver
 
     public Dictionary<string, Sprite> spriteDic = new Dictionary<string, Sprite>();
 
-    #region IserializationCallbackReceiver implementation
+    #region ISerializationCallbackReceiver implementation
 
-    void IserializationCallbackReceiver.OnBeforeSeriallize()
+    void ISerializationCallbackReceiver.OnBeforeSerialize()
     {
     	//序列化
     	m_Keys.Clear();
@@ -28,7 +28,7 @@ public class Script_04_11 : MonoBehaviour, IserializationCallbackReceiver
     	}
     }
 
-    void IserializationCallbackReceiver.OnAfterDeserialize()
+    void ISerializationCallbackReceiver.OnAfterDeserialize()
     {
     	//反序列化
     	spriteDic.Clear();
@@ -50,9 +50,9 @@ public class ScriptInsector : Editor
 	public override void OnInspectorGUI()
 	{
 		//更新最新数据
-		SerializeObject.Update();
-		SerializedProperty propertyKey = SerializeObject.FindProperty ("m_Keys");
-		SerializedProperty propertyValue = SerializeObject.FindProperty("m_Values");
+		serializedObject.Update();
+		SerializedProperty propertyKey = serializedObject.FindProperty ("m_Keys");
+		SerializedProperty propertyValue = serializedObject.FindProperty("m_Values");
 
 		int size = propertyKey.arraySize;
 
