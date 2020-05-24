@@ -26,7 +26,7 @@ public class Script_04_06 : MonoBehaviour
         if (timeleft <= 0.0)
         {
             float fps = accum / frames;
-            //????????
+            //?????????????
             string format = System.String.Format("{0:F2} FPS", fps);
             stringFps = format;
             timeleft = updateInterval;
