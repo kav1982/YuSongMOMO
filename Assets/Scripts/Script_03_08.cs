@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Script_03_08 
 {
-    [MenuItem("GameObject/UI/Image")]
+    [MenuItem("GameObject/UI/Image111")]
     static void CreatImage()
     {
         if(Selection.activeTransform)
